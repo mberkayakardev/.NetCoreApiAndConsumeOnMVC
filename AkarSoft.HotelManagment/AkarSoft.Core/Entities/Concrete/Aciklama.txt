@@ -1,0 +1,2 @@
+﻿Tüm projelerinizde ortak olarak kullanmak istediğiniz entityleriniz burada belirtebilirsiniz. Tüm projelerde kullanılabilmesi için ilgili klasör yapılanması oluşturulmuştur. 
+isteğe bağlı olarak ilgili entityler ekenebilir. 

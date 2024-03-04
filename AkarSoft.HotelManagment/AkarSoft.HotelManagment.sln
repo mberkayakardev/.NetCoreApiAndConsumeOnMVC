@@ -7,9 +7,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{8927
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{EC0D386A-A2C4-4DEC-9440-189F90ADF3FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Core", "AkarSoft.Core\AkarSoft.Core.csproj", "{62D42808-03DA-4BDA-886A-918DD9C2C686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Repositories", "AkarSoft.Repositories\AkarSoft.Repositories.csproj", "{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D42808-03DA-4BDA-886A-918DD9C2C686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D42808-03DA-4BDA-886A-918DD9C2C686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D42808-03DA-4BDA-886A-918DD9C2C686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D42808-03DA-4BDA-886A-918DD9C2C686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62D42808-03DA-4BDA-886A-918DD9C2C686} = {892726DA-52D6-44B6-BE2D-6ABF75DDF1BD}
+		{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703} = {892726DA-52D6-44B6-BE2D-6ABF75DDF1BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {746C08DC-FAB9-48D9-9EB1-1DAB27AEB90A}
