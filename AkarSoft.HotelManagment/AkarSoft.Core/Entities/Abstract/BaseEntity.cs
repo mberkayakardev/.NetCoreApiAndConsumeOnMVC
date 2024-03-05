@@ -1,7 +1,7 @@
 ﻿
 namespace AkarSoft.Core.Entities.Abstract
 {
-    public class BaseEntity : IEntity
+    public abstract class BaseEntity : IEntity
     {
         public int Id { get ; set ; }
         public bool IsActive { get ; set ; }

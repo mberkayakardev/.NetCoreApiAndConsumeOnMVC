@@ -1,6 +1,6 @@
 ﻿namespace AkarSoft.Core.Dtos.Abstract
 {
-    public class BaseDto : IDto
+    public abstract class BaseDto : IDto
     {
     }
 }

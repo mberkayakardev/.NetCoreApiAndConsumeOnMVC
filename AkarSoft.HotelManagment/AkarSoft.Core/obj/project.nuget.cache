@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GF7Px6l24r6xke+WwZyas95r3y9kgtRdsbwVaRry6wOwaUBsSxeu6KtZ9tvVAcV4Jcvoue7yxQl88FD6uIwJ+g==",
+  "dgSpecHash": "Se1IGz7JRPpQBuriDQ4kyLJpbSv6hlanBdsjU5K4I5oJmTzNQmvjiNj9RNUB/AXVLuqxodt3RDI3B/9aPt0L/w==",
   "success": true,
   "projectFilePath": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\AkarSoft.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mberk\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
     "C:\\Users\\mberk\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\mberk\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\mberk\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\mberk\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\mberk\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\mberk\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
