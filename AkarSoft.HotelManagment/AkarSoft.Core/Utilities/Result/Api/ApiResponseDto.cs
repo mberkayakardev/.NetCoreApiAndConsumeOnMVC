@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AkarSoft.Core.Dtos.Concrete
+namespace AkarSoft.Core.Utilities.Result.Api
 {
     // Generic olarak bir data alsın.
     public class ApiResponseDto<T>

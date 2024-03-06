@@ -1,4 +1,5 @@
 ﻿using AkarSoft.Core.Entities.Abstract;
+using AkarSoft.Core.Utilities.Pager.ComplexTypes;
 using System.Linq.Expressions;
 
 namespace AkarSoft.Core.DataAccess.EntityFramework.Abstract

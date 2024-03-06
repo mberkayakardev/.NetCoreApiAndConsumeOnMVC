@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AkarSoft.Core.Dtos.Concrete
+namespace AkarSoft.Core.Utilities.Result.Api
 {
     public class NoContentDto // Update gibi işlemlerde Response dönerken biz body de update edilen datayı dönmeyeceğiz o sebeple boş bir sınıf oluşturduk 
     {

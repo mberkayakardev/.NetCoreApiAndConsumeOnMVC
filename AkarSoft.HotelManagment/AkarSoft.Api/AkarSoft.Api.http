@@ -1,0 +1,6 @@
+@AkarSoft.Api_HostAddress = http://localhost:5044
+
+GET {{AkarSoft.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

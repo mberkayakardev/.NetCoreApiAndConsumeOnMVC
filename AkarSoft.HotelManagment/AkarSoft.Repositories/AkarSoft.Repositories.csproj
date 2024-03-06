@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="EntityFramework\Concrete\Configurations\" />
+    <Folder Include="ObjectModels\" />
+    <Folder Include="EntityFramework\Concrete\Seeds\" />
+    <Folder Include="EntityFramework\Concrete\Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AkarSoft.Entities\AkarSoft.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

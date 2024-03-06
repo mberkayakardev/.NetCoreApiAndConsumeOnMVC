@@ -1,5 +1,6 @@
 ﻿using AkarSoft.Core.DataAccess.EntityFramework.Abstract;
 using AkarSoft.Core.Entities.Abstract;
+using AkarSoft.Core.Utilities.Pager.ComplexTypes;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -40,7 +41,7 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
             });
         }
 
-        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> where = null, bool AsNoTracking = true, Expression<Func<T, object>> OrderByProperty = null, OrderByEnum order = OrderByEnum.Descanding, params Expression<Func<T, object>>[] IncludeProperties)
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> where = null, bool AsNoTracking = true,  params Expression<Func<T, object>>[] IncludeProperties)
         {
             IQueryable<T> query = _Entities;
 
@@ -52,13 +53,6 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
             if (where != null)
                 query = query.Where(where);
 
-            if (OrderByProperty != null)
-            {
-                if (order == OrderByEnum.Ascending)
-                    query = query.OrderBy(OrderByProperty);
-                else
-                    query = query.OrderByDescending(OrderByProperty);
-            }
 
             if (AsNoTracking == true)
                 query = query.AsNoTracking();
@@ -66,7 +60,7 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
             return await query.ToListAsync();
         }
 
-        public async Task<List<T>> GetAllAsyncWithListExpression(IList<Expression<Func<T, bool>>> where = null, bool AsNoTracking = true, Expression<Func<T, object>> OrderByProperty = null, OrderByEnum order = OrderByEnum.Descanding, params Expression<Func<T, object>>[] IncludeProperties)
+        public async Task<List<T>> GetAllAsyncWithListExpression(IList<Expression<Func<T, bool>>> where = null, bool AsNoTracking = true, params Expression<Func<T, object>>[] IncludeProperties)
         {
             IQueryable<T> query = _Entities;
 
@@ -80,21 +74,13 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
                     query = query.Where(item);
 
 
-            if (OrderByProperty != null)
-            {
-                if (order == OrderByEnum.Ascending)
-                    query = query.OrderBy(OrderByProperty);
-                else
-                    query = query.OrderByDescending(OrderByProperty);
-            }
-
             if (AsNoTracking == true)
                 query = query.AsNoTracking();
 
             return await query.ToListAsync();
         }
 
-        public async Task<PagedList<T>> GetAllWithPagingAsync(RequestParameters parameters, Expression<Func<T, bool>> where = null, bool AsNoTracking = true, Expression<Func<T, object>> OrderByProperty = null, OrderByEnum order = OrderByEnum.Descanding, params Expression<Func<T, object>>[] IncludeProperties)
+        public async Task<PagedList<T>> GetAllWithPagingAsync(RequestParameters parameters, Expression<Func<T, bool>> where = null, bool AsNoTracking = true , params Expression<Func<T, object>>[] IncludeProperties)
         {
             IQueryable<T> query = _Entities;
 
@@ -105,14 +91,6 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
 
             if (where != null)
                 query = query.Where(where);
-
-            if (OrderByProperty != null)
-            {
-                if (order == OrderByEnum.Ascending)
-                    query = query.OrderBy(OrderByProperty);
-                else
-                    query = query.OrderByDescending(OrderByProperty);
-            }
 
             if (AsNoTracking == true)
                 query = query.AsNoTracking();
@@ -125,7 +103,7 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
 
         }
 
-        public async Task<PagedList<T>> GetAllWithPagingAsync(RequestParameters parameters, IList<Expression<Func<T, bool>>> where = null, bool AsNoTracking = true, Expression<Func<T, object>> OrderByProperty = null, OrderByEnum order = OrderByEnum.Descanding, params Expression<Func<T, object>>[] IncludeProperties)
+        public async Task<PagedList<T>> GetAllWithPagingAsync(RequestParameters parameters, IList<Expression<Func<T, bool>>> where = null, bool AsNoTracking = true, params Expression<Func<T, object>>[] IncludeProperties)
         {
             IQueryable<T> query = _Entities;
 
@@ -140,13 +118,6 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
                     query = query.Where(item);
                 }
 
-            if (OrderByProperty != null)
-            {
-                if (order == OrderByEnum.Ascending)
-                    query = query.OrderBy(OrderByProperty);
-                else
-                    query = query.OrderByDescending(OrderByProperty);
-            }
 
             if (AsNoTracking == true)
                 query = query.AsNoTracking();
@@ -163,7 +134,7 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
             return _Entities.AsQueryable();
         }
 
-        public async Task<T> GetAsync(Expression<Func<T, bool>> where = null, bool AsNoTracking = false, Expression<Func<T, object>> OrderBy = null, OrderByEnum order = OrderByEnum.Descanding, params Expression<Func<T, object>>[] IncludeProperties)
+        public async Task<T> GetAsync(Expression<Func<T, bool>> where = null, bool AsNoTracking = false, params Expression<Func<T, object>>[] IncludeProperties)
         {
             IQueryable<T> query = _Entities;
             if (IncludeProperties != null)
@@ -174,14 +145,7 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
             if (where != null)
                 query = query.Where(where);
 
-            if (OrderBy != null)
-            {
-                if (order == OrderByEnum.Ascending)
-                    query = query.OrderBy(OrderBy);
-                else
-                    query = query.OrderByDescending(OrderBy);
-            }
-
+            
             if (AsNoTracking == true)
                 query = query.AsNoTracking();
 
@@ -203,5 +167,4 @@ namespace AkarSoft.Core.DataAccess.EntityFramework.Concrete
         }
     }
 
-}
 }
