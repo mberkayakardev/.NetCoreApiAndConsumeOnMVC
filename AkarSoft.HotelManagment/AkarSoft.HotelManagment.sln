@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Core", "AkarSoft.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Repositories", "AkarSoft.Repositories\AkarSoft.Repositories.csproj", "{38E3CEEF-92CA-48FF-993C-3CDB0BCD0703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Dtos", "AkarSoft.Dtos\AkarSoft.Dtos.csproj", "{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Dtos", "AkarSoft.Dtos\AkarSoft.Dtos.csproj", "{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Entities", "AkarSoft.Entities\AkarSoft.Entities.csproj", "{A4D747AA-D20D-4040-970B-668FBEF19BB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Entities", "AkarSoft.Entities\AkarSoft.Entities.csproj", "{A4D747AA-D20D-4040-970B-668FBEF19BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Managers", "AkarSoft.Managers\AkarSoft.Managers.csproj", "{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Managers", "AkarSoft.Managers\AkarSoft.Managers.csproj", "{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.Api", "AkarSoft.Api\AkarSoft.Api.csproj", "{ED50381E-1572-4301-9758-8030CC385DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkarSoft.Api", "AkarSoft.Api\AkarSoft.Api.csproj", "{ED50381E-1572-4301-9758-8030CC385DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoft.MVCUI", "AkarSoft.MVCUI\AkarSoft.MVCUI.csproj", "{3D9EE035-661F-4215-9622-9689616B705E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{ED50381E-1572-4301-9758-8030CC385DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED50381E-1572-4301-9758-8030CC385DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED50381E-1572-4301-9758-8030CC385DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9EE035-661F-4215-9622-9689616B705E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9EE035-661F-4215-9622-9689616B705E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9EE035-661F-4215-9622-9689616B705E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9EE035-661F-4215-9622-9689616B705E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{A4D747AA-D20D-4040-970B-668FBEF19BB2} = {892726DA-52D6-44B6-BE2D-6ABF75DDF1BD}
 		{CB492646-8CC4-4A0B-B1EB-7F878A1C5673} = {892726DA-52D6-44B6-BE2D-6ABF75DDF1BD}
 		{ED50381E-1572-4301-9758-8030CC385DDD} = {892726DA-52D6-44B6-BE2D-6ABF75DDF1BD}
+		{3D9EE035-661F-4215-9622-9689616B705E} = {EC0D386A-A2C4-4DEC-9440-189F90ADF3FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {746C08DC-FAB9-48D9-9EB1-1DAB27AEB90A}

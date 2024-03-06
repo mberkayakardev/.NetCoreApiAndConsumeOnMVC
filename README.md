@@ -35,7 +35,7 @@
  <!-- <img src ="https://github.com/mberkayakardev/E_Commerce_With_Core_MVC/blob/master/Resimler/LoginPage.png?raw=true" > -->
  <!-- <img src ="https://github.com/mberkayakardev/E_Commerce_With_Core_MVC/blob/master/Resimler/mainmenu2.png?raw=true" > -->
  <!-- <img src ="https://github.com/mberkayakardev/E_Commerce_With_Core_MVC/blob/master/Resimler/dbsheme.png?raw=true" > -->
- <img src ="https://github.com/mberkayakardev/E_Commerce_With_Core_MVC/blob/master/Resimler/UrunfiltrelemeVePagination.png?raw=true" >
+ <!-- <img src ="https://github.com/mberkayakardev/E_Commerce_With_Core_MVC/blob/master/Resimler/UrunfiltrelemeVePagination.png?raw=true" > -->
 
  
  
@@ -57,6 +57,9 @@
 * .Net 8.0
 * .Net Core MVC
 * .Net Core Web Api 
+* .Net Core Identity
+* MailKit - (MailService)
+* Extentions Methods
 * N-Tier Achitecture - (Çok katmanlı mimari)
 * JWT 
 * Unit Of Work

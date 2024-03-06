@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AkarSoft.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6d55742dc3c9f99e734616b23f50b32c40790a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+094675256b7048ae8b8ac251a8b81a799bdf2c78")]
 [assembly: System.Reflection.AssemblyProductAttribute("AkarSoft.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AkarSoft.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
