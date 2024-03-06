@@ -13,6 +13,10 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.UOW
         {
             _context = context;
         }
+        public UnitOfWork()
+        {
+            
+        }
 
         #region Costume Services
         /// <summary>

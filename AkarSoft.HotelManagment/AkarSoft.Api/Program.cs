@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Autofac için ilgili container tanıtıldı 
 builder.Host.UseServiceProviderFactory (new AutofacServiceProviderFactory());
-builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new AutoFacModule(builder.Configuration)));
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new AutoFacModule(builder.Configuration, builder.Environment)));
 
 // Api için Controller Yapısı Eklendi 
 builder.Services.AddControllers();

@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "AkarSoft.Api.Controllers.HomeController",
+    "Method": "Deneme",
+    "RelativePath": "api/Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AkarSoft.Managers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+094675256b7048ae8b8ac251a8b81a799bdf2c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30d57a7bb3956e451a01836e3b9d118687fbd168")]
 [assembly: System.Reflection.AssemblyProductAttribute("AkarSoft.Managers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AkarSoft.Managers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

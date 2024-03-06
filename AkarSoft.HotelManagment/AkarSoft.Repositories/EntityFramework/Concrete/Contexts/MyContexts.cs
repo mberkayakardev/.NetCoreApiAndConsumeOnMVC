@@ -42,14 +42,11 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.Contexts
 
 
         #region DataSet
-
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<HotelsRooms> HotelsRooms {  get; set; }
         public DbSet<CarouselNews> CarouselNews {  get; set; }
         public DbSet<Services> Services { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
-
-
         #endregion
     }
 }

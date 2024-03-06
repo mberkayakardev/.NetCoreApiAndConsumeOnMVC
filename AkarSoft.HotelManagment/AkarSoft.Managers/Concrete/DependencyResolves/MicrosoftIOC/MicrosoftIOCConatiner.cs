@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace AkarSoft.Managers.Concrete.DependencyResolves.MicrosoftIOC
 {
@@ -9,7 +10,7 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.MicrosoftIOC
         /// </summary>
         public static void AddCostumeServicesMicrosoftIOC(this IServiceCollection services)
         {
-
+            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
         }
     }
 }
