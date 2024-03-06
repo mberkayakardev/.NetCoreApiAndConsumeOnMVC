@@ -1,0 +1,16 @@
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\bin\Debug\net8.0\AkarSoft.Entities.deps.json
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\bin\Debug\net8.0\AkarSoft.Entities.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\bin\Debug\net8.0\AkarSoft.Entities.pdb
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\bin\Debug\net8.0\AkarSoft.Core.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\bin\Debug\net8.0\AkarSoft.Core.pdb
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.csproj.AssemblyReference.cache
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.AssemblyInfoInputs.cache
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.AssemblyInfo.cs
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.csproj.CoreCompileInputs.cache
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.sourcelink.json
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.5857E01E.Up2Date
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\refint\AkarSoft.Entities.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\AkarSoft.Entities.pdb
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Entities\obj\Debug\net8.0\ref\AkarSoft.Entities.dll
