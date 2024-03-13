@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using AkarSoft.Dtos.Concrete.Rooms;
+using AkarSoft.Entities.Concrete.Hotels;
+using AutoMapper;
 
 namespace AkarSoft.Managers.Concrete.MappingProfiles.Rooms
 {
@@ -6,6 +8,8 @@ namespace AkarSoft.Managers.Concrete.MappingProfiles.Rooms
     {
         public RoomMappingProfile()
         {
+            CreateMap<RoomListDto, HotelsRoom>().ReverseMap();
+            CreateMap<RoomCreateDto, HotelsRoom>().ReverseMap();  
 
         }
     }

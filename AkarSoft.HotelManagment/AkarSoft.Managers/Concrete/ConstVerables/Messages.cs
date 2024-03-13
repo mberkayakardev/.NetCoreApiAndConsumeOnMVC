@@ -1,4 +1,7 @@
-﻿namespace AkarSoft.Managers.Concrete.ConstVerables
+﻿using AkarSoft.Dtos.Concrete.Rooms;
+using AkarSoft.Entities.Concrete.Hotels;
+
+namespace AkarSoft.Managers.Concrete.ConstVerables
 {
     public static class Messages
     {
@@ -13,7 +16,29 @@
         public static class Status
         {
             public const string Success = "İşlem Başarılı.";
-        }
+            public const string NotFound = "Kayıt Bulunamadı.";
 
+        }
+        //public static string GetMessageForType(Type typereferences)
+        //{
+             
+
+
+        //    switch (type)
+        //    {
+        //        case RoomListDto :
+        //            return Status.NotFound;
+        //        default:
+        //            return Status.Success; // Varsayılan olarak başarı mesajını döndürür.
+        //    }
+        //}
+
+        //private static string GetEntityOrDtoName(Type type)
+        //{
+        //    if (type == typeof(RoomListDto))
+        //    {
+        //        return "Otel Odası";
+        //    }
+        //}
     }
 }

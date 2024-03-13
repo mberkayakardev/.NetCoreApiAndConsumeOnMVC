@@ -2,6 +2,8 @@
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
 using AkarSoft.Managers.Concrete.DependencyResolves.AutoFac;
+using AkarSoft.Repositories.EntityFramework.Concrete.Contexts;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 #region Services 
 
 // Autofac için ilgili container tanıtıldı 
-builder.Host.UseServiceProviderFactory (new AutofacServiceProviderFactory());
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new AutoFacModule(builder.Configuration, builder.Environment)));
 
 // Api için Controller Yapısı Eklendi 

@@ -9,18 +9,16 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.Contexts
 {
     public class MyContexts : DbContext
     {
-        public MyContexts(DbContextOptions<MyContexts> opt) : base(opt) 
+        public MyContexts(DbContextOptions<MyContexts> opt) : base(opt)
         {
-        
-        }
 
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
-
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
@@ -40,13 +38,13 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.Contexts
             return base.SaveChangesAsync(cancellationToken);
         }
 
-
         #region DataSet
         public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<HotelsRooms> HotelsRooms {  get; set; }
-        public DbSet<CarouselNews> CarouselNews {  get; set; }
-        public DbSet<Services> Services { get; set; }
+        public DbSet<HotelsRoom> HotelsRooms { get; set; }
+        public DbSet<CarouselNew> CarouselNews { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
+        public DbSet<Staff> Staffs { get; set; }
         #endregion
     }
 }

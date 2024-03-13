@@ -15,7 +15,7 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.UOW
         }
         public UnitOfWork()
         {
-            
+
         }
 
         #region Costume Services
@@ -35,13 +35,11 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.UOW
             await _context.SaveChangesAsync();
         }
 
-        IEfGenericRepository<T> IUnitOfWork.GetGenericRepositories<T>()
+        public IEfGenericRepository<T> GetGenericRepositories<T>() where T : class, IEntity, new()
         {
             var repository = new EfGenericRepository<T>(_context);
             return repository;
         }
-
-
 
         //[Obsolete("Eski kullanım artık property bazında service çağırılması gerekecektir")]
         //public TRepository ReturnRepository<T, TRepository>() where T : BaseEntity, new() where TRepository : IEfGenericRepository<T>, new()
@@ -49,6 +47,13 @@ namespace AkarSoft.Repositories.EntityFramework.Concrete.UOW
         //    var repository = (TRepository)Activator.CreateInstance(typeof(TRepository), _context);
         //    return repository;
         //}
-
     }
 }
+
+
+
+
+
+
+
+

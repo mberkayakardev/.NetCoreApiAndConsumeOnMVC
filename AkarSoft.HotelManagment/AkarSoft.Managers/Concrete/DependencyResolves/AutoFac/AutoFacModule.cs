@@ -1,13 +1,17 @@
-﻿using AkarSoft.Managers.Concrete.MappingProfiles.Rooms;
+﻿using AkarSoft.Managers.Abstract;
+using AkarSoft.Managers.Concrete.Managers;
+using AkarSoft.Managers.Concrete.MappingProfiles.Rooms;
 using AkarSoft.Repositories.EntityFramework.Abstract;
 using AkarSoft.Repositories.EntityFramework.Concrete.Contexts;
 using AkarSoft.Repositories.EntityFramework.Concrete.UOW;
 using Autofac;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
+using System.Xml.Serialization;
 
 namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
 {
@@ -31,10 +35,12 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
 
             AddAutoMapper(builder);
 
+            AddDependencies(builder);
+
+            AppConfiguration(builder);
 
 
 
-            // Development ve Prod ortamlarına göre loglama gibi bazı dinamikleri ayrıştırabilmek maksatlı bu şekilde bir ayrışım oluşturulmuştur. 
 
 
             base.Load(builder);
@@ -50,13 +56,9 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
             builder.Register(x =>
             {
                 var opt = new DbContextOptionsBuilder<MyContexts>();
-
                 opt.UseSqlServer(configuration.GetConnectionString("SqlServer").ToString());
-
                 var context = new MyContexts(opt.Options);
 
-                if (Environment.IsDevelopment())
-                    context.Database.Migrate();
 
                 return context;
 
@@ -76,22 +78,53 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
         #endregion
 
         /// <summary>
-        /// AutoMapper Kaydı için gerçekleşmektedir.
+        /// AutoMapper Kaydı için gerçekleşmektedir. Reflectionlar ile bu Manager DLL i için geçerli olan bir koddur. Yeni pofile leri elle eklemeneize gerek yok ilgili işlem otomatik gerçekleşmekte 
         /// </summary>
         #region AutoMapper 
         private static void AddAutoMapper(ContainerBuilder builder)
         {
+
+
             builder.Register(ctx => new MapperConfiguration(cfg =>
             {
-                var AssemblyList = Assembly.GetExecutingAssembly().GetTypes();
-                // AutoMapper profil(eri)lerini kaydet
-                //cfg.AddProfile(new RoomMappingProfile()); // YourMappingProfile yerine kendi profil sınıfınızın adını kullanın
-            })).AsSelf().SingleInstance();
+                var AssemblyList2 = Assembly.Load(Assembly.GetExecutingAssembly().FullName).GetTypes().Where(x => x.BaseType == typeof(Profile)).ToList();
+                foreach (var item in AssemblyList2)
+                {
+                    cfg.AddProfile(item);
 
+                }
+
+            })).AsSelf().SingleInstance();
 
             builder.Register(ctx => ctx.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
         }
 
         #endregion
+
+        /// <summary>
+        /// Costume bir şekilde oluşturulmuş olan Servislerinizin implementasyonlarını gerçekleştirebilirsiniz. 
+        /// </summary>
+        #region Costume Dependencies 
+        private static void AddDependencies(ContainerBuilder builder)
+        {
+            builder.RegisterType<RoomManager>().As<IRoomService>().InstancePerLifetimeScope();   // Scoped 
+            builder.RegisterType<StaffManager>().As<IStaffService>().InstancePerLifetimeScope(); // Scoped 
+        }
+        #endregion
+
+        /// <summary>
+        /// Uygulama Konfigürasyonlarının ekleneceği bir alandır (IHttpcontextAccessor, Login Logout .... )
+        /// </summary>
+        /// <param name="builder"></param>
+        #region AppConfiguration
+
+        private static void AppConfiguration(ContainerBuilder builder)
+        {
+            builder.RegisterType<HttpContextAccessor>().As<IHttpContextAccessor>().InstancePerLifetimeScope();
+        }
+
+
+        #endregion
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using AkarSoft.Core.Utilities.Result.Api.ComplexTypes;
+using System.Text.Json.Serialization;
 
 namespace AkarSoft.Core.Utilities.Result.Api
 {
@@ -17,22 +18,22 @@ namespace AkarSoft.Core.Utilities.Result.Api
 
 
         ///  Methods (new anahtar sözcüğü yerine ilgili methodlar vastıası ile oluşturabilirsiniz. Tercih sizin.)
-        public static ApiResponseDto<T> SuccessResult(int statuscode, T data) // verileri listelemek gibi 
+        public static ApiResponseDto<T> SuccessResult(ApiResponseStatus statuscode, T data) // verileri listelemek gibi 
         {
-            return new ApiResponseDto<T>() { Data = data, StatusCode = statuscode };
+            return new ApiResponseDto<T>() { Data = data, StatusCode = Convert.ToInt32(statuscode) };
         }
-        public static ApiResponseDto<T> SuccessResult(int statuscode) // illaki data dönmem gerekmeyen bir durum olabilir // Update işlemi gibi yada delete işlemi gibi geriye data dönülmez.
+        public static ApiResponseDto<T> SuccessResult(ApiResponseStatus statuscode) // illaki data dönmem gerekmeyen bir durum olabilir // Update işlemi gibi yada delete işlemi gibi geriye data dönülmez.
         {
-            return new ApiResponseDto<T>() { StatusCode = statuscode };
+            return new ApiResponseDto<T>() { StatusCode = Convert.ToInt32(statuscode) };
         }
-        public static ApiResponseDto<T> FailResult(List<string> Error, int statuscode) // hataları döneceğim alan. 
+        public static ApiResponseDto<T> FailResult(List<string> Error, ApiResponseStatus statuscode) // hataları döneceğim alan. 
         {
-            return new ApiResponseDto<T>() { StatusCode = statuscode, ErrorMessage = Error };
+            return new ApiResponseDto<T>() { StatusCode = Convert.ToInt32(statuscode), ErrorMessage = Error };
         }
 
-        public static ApiResponseDto<T> FailResult(string Error, int statuscode) // Bazen tek bir hata gelebilir (yani operasyonel bir süreç olabilir validasyon hatasından ziyade)
+        public static ApiResponseDto<T> FailResult(string Error, ApiResponseStatus statuscode) // Bazen tek bir hata gelebilir (yani operasyonel bir süreç olabilir validasyon hatasından ziyade)
         {
-            return new ApiResponseDto<T>() { StatusCode = statuscode, ErrorMessage = new() { Error } };
+            return new ApiResponseDto<T>() { StatusCode = Convert.ToInt32(statuscode), ErrorMessage = new() { Error } };
         }
 
 

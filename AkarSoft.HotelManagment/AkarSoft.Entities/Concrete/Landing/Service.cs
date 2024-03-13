@@ -2,7 +2,7 @@
 
 namespace AkarSoft.Entities.Concrete.Landing
 {
-    public class Services : BaseEntity
+    public class Service : BaseEntity
     {
         public string ServiceIcon { get; set; }
         public string Title { get; set; }

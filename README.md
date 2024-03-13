@@ -79,3 +79,5 @@
 * Ajax
 * JQuery
 * Distrubuted Cache 
+* Reflections
+* Cloudinary Blob Storage

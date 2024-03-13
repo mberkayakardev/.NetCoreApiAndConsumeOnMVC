@@ -2,7 +2,7 @@
 
 namespace AkarSoft.Entities.Concrete.Landing
 {
-    public class CarouselNews : BaseEntity
+    public class CarouselNew : BaseEntity
     {
         public string Title { get; set; }
         public string? Description { get; set; }

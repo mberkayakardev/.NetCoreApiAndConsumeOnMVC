@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EntityFramework\Concrete\Seeds\" />
     <Folder Include="ObjectModels\" />
     <Folder Include="EntityFramework\Concrete\Repositories\" />
   </ItemGroup>

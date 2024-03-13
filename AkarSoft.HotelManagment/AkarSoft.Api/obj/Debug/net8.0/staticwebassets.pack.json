@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\wwwroot\\Medias\\Berkay.jpg",
+      "PackagePath": "staticwebassets\\Medias\\Berkay.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AkarSoft.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AkarSoft.Api.props",
+      "PackagePath": "build\\AkarSoft.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AkarSoft.Api.props",
+      "PackagePath": "buildMultiTargeting\\AkarSoft.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AkarSoft.Api.props",
+      "PackagePath": "buildTransitive\\AkarSoft.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

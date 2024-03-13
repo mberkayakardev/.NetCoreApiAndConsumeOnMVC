@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AkarSoft.Repositories.Migrations
 {
     [DbContext(typeof(MyContexts))]
-    [Migration("20240306180642_InitialCreate")]
+    [Migration("20240313143459_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -20,12 +20,12 @@ namespace AkarSoft.Repositories.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AkarSoft.Entities.Concrete.Hotels.HotelsRooms", b =>
+            modelBuilder.Entity("AkarSoft.Entities.Concrete.Hotels.HotelsRoom", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -50,9 +50,8 @@ namespace AkarSoft.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CreatedUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -64,23 +63,30 @@ namespace AkarSoft.Repositories.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ModifiedUser")
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
-                        .HasColumnType("int");
+                        .HasPrecision(10)
+                        .HasColumnType("int")
+                        .HasAnnotation("Range", new[] { 0, 150000 });
 
                     b.Property<string>("RoomNumber")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Stars")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(1500)
+                        .HasColumnType("nvarchar(1500)");
 
                     b.Property<bool>("WifiActive")
                         .HasColumnType("bit");
@@ -88,6 +94,94 @@ namespace AkarSoft.Repositories.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("HotelsRooms");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            BathCount = 2,
+                            BedCount = 3,
+                            CoverImage = "https://aremorch.com/wp-content/uploads/2016/09/The-Details-That-Matter-Top-Things-Every-Luxury-Hotel-Room-Should-Have.png",
+                            CreatedDate = new DateTime(2024, 3, 13, 17, 34, 59, 764, DateTimeKind.Local).AddTicks(8391),
+                            CreatedUser = "BERKAYAKAR",
+                            CreatedUserId = 1,
+                            Description = "Güzel bi",
+                            IsActive = true,
+                            ModifiedDate = new DateTime(2024, 3, 13, 17, 34, 59, 764, DateTimeKind.Local).AddTicks(8404),
+                            ModifiedUserId = 1,
+                            ModifiedUserName = "BERKAYAKAR",
+                            Price = 1500,
+                            RoomNumber = "1A",
+                            Stars = 4,
+                            Title = "Aile Boy",
+                            WifiActive = true
+                        });
+                });
+
+            modelBuilder.Entity("AkarSoft.Entities.Concrete.Hotels.Staff", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("StaffImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Staffs");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 3, 13, 17, 34, 59, 764, DateTimeKind.Local).AddTicks(8595),
+                            CreatedUser = "BERKAYAKAR",
+                            CreatedUserId = 1,
+                            IsActive = true,
+                            ModifiedDate = new DateTime(2024, 3, 13, 17, 34, 59, 764, DateTimeKind.Local).AddTicks(8595),
+                            ModifiedUserId = 1,
+                            ModifiedUserName = "BERKAYAKAR",
+                            Name = "Berkay Akar",
+                            StaffImage = "https://berkayakar.com.tr/StaticFiles/ProfilFoto.jpg",
+                            Title = "Ceo"
+                        });
                 });
 
             modelBuilder.Entity("AkarSoft.Entities.Concrete.Identity.AppUser", b =>
@@ -105,9 +199,8 @@ namespace AkarSoft.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CreatedUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -115,7 +208,10 @@ namespace AkarSoft.Repositories.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ModifiedUser")
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -132,7 +228,7 @@ namespace AkarSoft.Repositories.Migrations
                     b.ToTable("AppUsers");
                 });
 
-            modelBuilder.Entity("AkarSoft.Entities.Concrete.Landing.CarouselNews", b =>
+            modelBuilder.Entity("AkarSoft.Entities.Concrete.Landing.CarouselNew", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -147,9 +243,8 @@ namespace AkarSoft.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CreatedUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -164,7 +259,10 @@ namespace AkarSoft.Repositories.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ModifiedUser")
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -188,7 +286,7 @@ namespace AkarSoft.Repositories.Migrations
                     b.ToTable("CarouselNews");
                 });
 
-            modelBuilder.Entity("AkarSoft.Entities.Concrete.Landing.Services", b =>
+            modelBuilder.Entity("AkarSoft.Entities.Concrete.Landing.Service", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -203,9 +301,8 @@ namespace AkarSoft.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CreatedUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -217,7 +314,10 @@ namespace AkarSoft.Repositories.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ModifiedUser")
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -249,9 +349,8 @@ namespace AkarSoft.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CreatedUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CreatedUserId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -263,7 +362,10 @@ namespace AkarSoft.Repositories.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ModifiedUser")
+                    b.Property<int>("ModifiedUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModifiedUserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
