@@ -3,8 +3,100 @@
   "WorkspaceRootPath": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\managers\\staffmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\managers\\staffmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|solutionrelative:akarsoft.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\dependencyresolves\\autofac\\autofacmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\dependencyresolves\\autofac\\autofacmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\managers\\media\\cloudinarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\managers\\media\\cloudinarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|solutionrelative:akarsoft.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|solutionrelative:akarsoft.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|solutionrelative:akarsoft.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\validationrules\\staffvalidationrules\\staffcreatedtovalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\validationrules\\staffvalidationrules\\staffcreatedtovalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\akarsoft.managers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\akarsoft.managers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\constverables\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\constverables\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.core\\dataaccess\\entityframework\\concrete\\efgenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|solutionrelative:akarsoft.core\\dataaccess\\entityframework\\concrete\\efgenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.core\\extentions\\fluentvalidation\\fluentvalidationextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|solutionrelative:akarsoft.core\\extentions\\fluentvalidation\\fluentvalidationextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.core\\utilities\\result\\api\\complextypes\\apiresponsestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D42808-03DA-4BDA-886A-918DD9C2C686}|AkarSoft.Core\\AkarSoft.Core.csproj|solutionrelative:akarsoft.core\\utilities\\result\\api\\complextypes\\apiresponsestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\abstract\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\abstract\\basemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\mappingprofiles\\staff\\staffmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\mappingprofiles\\staff\\staffmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\abstract\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\abstract\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.dtos\\concrete\\rooms\\roomcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|solutionrelative:akarsoft.dtos\\concrete\\rooms\\roomcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.dtos\\concrete\\staffs\\staffcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|solutionrelative:akarsoft.dtos\\concrete\\staffs\\staffcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.dtos\\concrete\\staffs\\stafflistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3F5C3F9-F24A-41B6-88AE-DA634B9F17D5}|AkarSoft.Dtos\\AkarSoft.Dtos.csproj|solutionrelative:akarsoft.dtos\\concrete\\staffs\\stafflistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\abstract\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\abstract\\imediaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\managers\\media\\localmediamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\managers\\media\\localmediamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED50381E-1572-4301-9758-8030CC385DDD}|AkarSoft.Api\\AkarSoft.Api.csproj|solutionrelative:akarsoft.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|d:\\github\\rapidapi\\akarsoft.hotelmanagment\\akarsoft.managers\\concrete\\complextypes\\optionpatternmodels\\cloudinaryverables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB492646-8CC4-4A0B-B1EB-7F878A1C5673}|AkarSoft.Managers\\AkarSoft.Managers.csproj|solutionrelative:akarsoft.managers\\concrete\\complextypes\\optionpatternmodels\\cloudinaryverables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +106,318 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.json",
               "RelativeDocumentMoniker": "AkarSoft.Api\\appsettings.json",
               "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.json",
               "RelativeToolTip": "AkarSoft.Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-14T00:17:01.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AkarSoft.Api\\appsettings.Development.json",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.Development.json",
+              "RelativeToolTip": "AkarSoft.Api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T00:25:20.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "AkarSoft.Api\\appsettings.Production.json",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\appsettings.Production.json",
+              "RelativeToolTip": "AkarSoft.Api\\appsettings.Production.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T00:25:26.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Api\\Controllers\\StaffController.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "AkarSoft.Api\\Controllers\\StaffController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:50:24.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoFacModule.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\DependencyResolves\\AutoFac\\AutoFacModule.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\DependencyResolves\\AutoFac\\AutoFacModule.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\DependencyResolves\\AutoFac\\AutoFacModule.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\DependencyResolves\\AutoFac\\AutoFacModule.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAswIYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:34:25.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StaffMappingProfile.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\MappingProfiles\\Staff\\StaffMappingProfile.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\MappingProfiles\\Staff\\StaffMappingProfile.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\MappingProfiles\\Staff\\StaffMappingProfile.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\MappingProfiles\\Staff\\StaffMappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:57:44.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StaffManager.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\StaffManager.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\Managers\\StaffManager.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\StaffManager.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\Managers\\StaffManager.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvy0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:01:08.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CloudinaryManager.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\Media\\CloudinaryManager.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\Managers\\Media\\CloudinaryManager.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\Media\\CloudinaryManager.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\Managers\\Media\\CloudinaryManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAWwCkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:38:43.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiResponseStatus.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\Utilities\\Result\\Api\\ComplexTypes\\ApiResponseStatus.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Core\\Utilities\\Result\\Api\\ComplexTypes\\ApiResponseStatus.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\Utilities\\Result\\Api\\ComplexTypes\\ApiResponseStatus.cs",
+              "RelativeToolTip": "AkarSoft.Core\\Utilities\\Result\\Api\\ComplexTypes\\ApiResponseStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:12:19.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BaseManager.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\BaseManager.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Abstract\\BaseManager.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\BaseManager.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Abstract\\BaseManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:10:13.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StaffListDto.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Staffs\\StaffListDto.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Dtos\\Concrete\\Staffs\\StaffListDto.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Staffs\\StaffListDto.cs",
+              "RelativeToolTip": "AkarSoft.Dtos\\Concrete\\Staffs\\StaffListDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:56:55.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StaffCreateDtoValidationRules.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ValidationRules\\StaffValidationRules\\StaffCreateDtoValidationRules.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\ValidationRules\\StaffValidationRules\\StaffCreateDtoValidationRules.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ValidationRules\\StaffValidationRules\\StaffCreateDtoValidationRules.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\ValidationRules\\StaffValidationRules\\StaffCreateDtoValidationRules.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:03:46.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AkarSoft.Managers",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\AkarSoft.Managers.csproj",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\AkarSoft.Managers.csproj",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\AkarSoft.Managers.csproj",
+              "RelativeToolTip": "AkarSoft.Managers\\AkarSoft.Managers.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-14T01:42:54.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FluentValidationExtentions.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\Extentions\\FluentValidation\\FluentValidationExtentions.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Core\\Extentions\\FluentValidation\\FluentValidationExtentions.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\Extentions\\FluentValidation\\FluentValidationExtentions.cs",
+              "RelativeToolTip": "AkarSoft.Core\\Extentions\\FluentValidation\\FluentValidationExtentions.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA3wBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:13:00.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ConstVerables\\Messages.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\ConstVerables\\Messages.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ConstVerables\\Messages.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\ConstVerables\\Messages.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:33:58.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EfGenericRepository.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\DataAccess\\EntityFramework\\Concrete\\EfGenericRepository.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Core\\DataAccess\\EntityFramework\\Concrete\\EfGenericRepository.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Core\\DataAccess\\EntityFramework\\Concrete\\EfGenericRepository.cs",
+              "RelativeToolTip": "AkarSoft.Core\\DataAccess\\EntityFramework\\Concrete\\EfGenericRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T01:38:15.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoomCreateDto.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Rooms\\RoomCreateDto.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Dtos\\Concrete\\Rooms\\RoomCreateDto.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Rooms\\RoomCreateDto.cs",
+              "RelativeToolTip": "AkarSoft.Dtos\\Concrete\\Rooms\\RoomCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:51:26.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoomManager.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\RoomManager.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\Managers\\RoomManager.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\RoomManager.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\Managers\\RoomManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:58:15.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IStaffService.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\IStaffService.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Abstract\\IStaffService.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\IStaffService.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Abstract\\IStaffService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAACZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:58:53.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StaffCreateDto.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Staffs\\StaffCreateDto.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Dtos\\Concrete\\Staffs\\StaffCreateDto.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Dtos\\Concrete\\Staffs\\StaffCreateDto.cs",
+              "RelativeToolTip": "AkarSoft.Dtos\\Concrete\\Staffs\\StaffCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:51:13.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IMediaService.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\IMediaService.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Abstract\\IMediaService.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Abstract\\IMediaService.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Abstract\\IMediaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:37:50.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LocalMediaManager.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\Media\\LocalMediaManager.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\Managers\\Media\\LocalMediaManager.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\Managers\\Media\\LocalMediaManager.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\Managers\\Media\\LocalMediaManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:38:16.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\Program.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Api\\Program.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Api\\Program.cs",
+              "RelativeToolTip": "AkarSoft.Api\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:29:38.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CloudinaryVerables.cs",
+              "DocumentMoniker": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ComplexTypes\\OptionPatternModels\\CloudinaryVerables.cs",
+              "RelativeDocumentMoniker": "AkarSoft.Managers\\Concrete\\ComplexTypes\\OptionPatternModels\\CloudinaryVerables.cs",
+              "ToolTip": "D:\\Github\\RapidApi\\AkarSoft.HotelManagment\\AkarSoft.Managers\\Concrete\\ComplexTypes\\OptionPatternModels\\CloudinaryVerables.cs",
+              "RelativeToolTip": "AkarSoft.Managers\\Concrete\\ComplexTypes\\OptionPatternModels\\CloudinaryVerables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T00:27:13.666Z",
               "EditorCaption": ""
             }
           ]

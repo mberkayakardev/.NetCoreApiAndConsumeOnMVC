@@ -1,4 +1,5 @@
 ﻿using AkarSoft.Core.Utilities.CostumeBaseControl.Api;
+using AkarSoft.Dtos.Concrete.Staffs;
 using AkarSoft.Managers.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,9 +27,10 @@ namespace AkarSoft.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePersons(int id)
+        public async Task<IActionResult> CreatePersons(StaffCreateDto Dto)
         {
-            return Ok("");
+            var result = await _staffService.CreateNewPerson(Dto);
+            return CreateActionResult(result);
         }
 
         [HttpPut("{id}")]

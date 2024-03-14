@@ -17,6 +17,6 @@ namespace AkarSoft.Core.Extentions.FluentValidation
             return ErrorResults;
             
         }
-        
+
     }
 }

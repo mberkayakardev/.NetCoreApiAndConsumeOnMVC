@@ -1,35 +1,37 @@
 ﻿using AkarSoft.Managers.Abstract;
+using AkarSoft.Managers.Concrete.ComplexTypes.OptionPatternModels;
 using AkarSoft.Managers.Concrete.Managers;
-using AkarSoft.Managers.Concrete.MappingProfiles.Rooms;
+using AkarSoft.Managers.Concrete.Managers.Media;
 using AkarSoft.Repositories.EntityFramework.Abstract;
 using AkarSoft.Repositories.EntityFramework.Concrete.Contexts;
 using AkarSoft.Repositories.EntityFramework.Concrete.UOW;
 using Autofac;
 using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System.Reflection;
-using System.Xml.Serialization;
 
 namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
 {
     public class AutoFacModule : Autofac.Module
     {
-        private readonly IConfiguration configuration;
-        private readonly IHostEnvironment Environment;
+        private readonly IConfiguration _configuration;
+        private readonly IHostEnvironment _Environment;
         public AutoFacModule(IConfiguration configuration, IHostEnvironment env)
         {
-            this.configuration = configuration;
-            this.Environment = env;
+            this._configuration = configuration;
+            this._Environment = env;
         }
 
 
 
         protected override void Load(ContainerBuilder builder)
         {
-            AddDbContext(builder, configuration, Environment);
+            AddDbContext(builder, _configuration, _Environment);
 
             AddUnitOfWork(builder);
 
@@ -37,7 +39,9 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
 
             AddDependencies(builder);
 
-            AppConfiguration(builder);
+            AppConfiguration(builder, _configuration);
+
+            AddValidator(builder);
 
 
 
@@ -109,6 +113,7 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
         {
             builder.RegisterType<RoomManager>().As<IRoomService>().InstancePerLifetimeScope();   // Scoped 
             builder.RegisterType<StaffManager>().As<IStaffService>().InstancePerLifetimeScope(); // Scoped 
+            builder.RegisterType<CloudinaryManager>().As<IMediaService>().InstancePerLifetimeScope();
         }
         #endregion
 
@@ -117,14 +122,28 @@ namespace AkarSoft.Managers.Concrete.DependencyResolves.AutoFac
         /// </summary>
         /// <param name="builder"></param>
         #region AppConfiguration
-
-        private static void AppConfiguration(ContainerBuilder builder)
+        private static void AppConfiguration(ContainerBuilder builder, IConfiguration configuration)
         {
             builder.RegisterType<HttpContextAccessor>().As<IHttpContextAccessor>().InstancePerLifetimeScope();
+            builder.Register(x => Options.Create(configuration.GetSection("CloudinarySettings").Get<CloudinaryVerables>()));
         }
-
-
         #endregion
 
+        #region AddValidator
+        private static void AddValidator(ContainerBuilder builder)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var validatorTypes = assembly.GetTypes().Where(x => x.BaseType != null && x.BaseType.IsGenericType && x.BaseType.GetGenericTypeDefinition() == typeof(AbstractValidator<>));
+
+            foreach (var validatorType in validatorTypes)
+            {
+                var genericType = validatorType.BaseType.GetGenericArguments()[0];
+                var validatorInterfaceType = typeof(IValidator<>).MakeGenericType(genericType);
+                builder.RegisterType(validatorType).As(validatorInterfaceType).InstancePerLifetimeScope();
+            }
+
+        }
+
     }
+    #endregion
 }

@@ -155,3 +155,5 @@ D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\obj\Debug\net8.0\refint\
 D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\obj\Debug\net8.0\AkarSoft.Api.pdb
 D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\obj\Debug\net8.0\AkarSoft.Api.genruntimeconfig.cache
 D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\obj\Debug\net8.0\ref\AkarSoft.Api.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\Github\RapidApi\AkarSoft.HotelManagment\AkarSoft.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

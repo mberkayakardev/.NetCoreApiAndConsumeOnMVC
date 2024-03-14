@@ -13,6 +13,7 @@ namespace AkarSoft.Managers.Abstract
     public interface IStaffService
     {
         public Task<ApiResponseDto<List<StaffListDto>>> GetAllPersons();
+        public Task<ApiResponseDto<StaffListDto>> CreateNewPerson(StaffCreateDto dto); // Kayıt işlemi sonrası id dönebilmek için StaffListDto döndüldü.  
 
     }
 }

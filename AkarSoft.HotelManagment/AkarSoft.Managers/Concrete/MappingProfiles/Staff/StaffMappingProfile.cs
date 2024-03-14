@@ -9,6 +9,7 @@ namespace AkarSoft.Managers.Concrete.MappingProfiles.Staff
         public StaffMappingProfile()
         {
             CreateMap<StaffListDto, Entities.Concrete.Hotels.Staff>().ReverseMap();
+            CreateMap<StaffCreateDto, Entities.Concrete.Hotels.Staff>().ReverseMap();
         }
     }
 }

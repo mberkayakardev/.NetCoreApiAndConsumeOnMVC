@@ -17,7 +17,9 @@ namespace AkarSoft.Managers.Concrete.ConstVerables
         {
             public const string Success = "İşlem Başarılı.";
             public const string NotFound = "Kayıt Bulunamadı.";
+            public const string NotCreated = "Kayıt Oluşturulamadı.";
 
+            public const string MediaUploadError = "Media yüklemesi gerçekleştirilirken bir hata meydana geldi : ";
         }
         //public static string GetMessageForType(Type typereferences)
         //{
