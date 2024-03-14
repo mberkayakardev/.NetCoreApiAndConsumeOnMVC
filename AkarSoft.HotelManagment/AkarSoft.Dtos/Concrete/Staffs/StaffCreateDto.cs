@@ -8,5 +8,6 @@ namespace AkarSoft.Dtos.Concrete.Staffs
         public string Name { get; set; }
         public string Title { get; set; }
         public IFormFile StaffImage { get; set; }
+
     }
 }

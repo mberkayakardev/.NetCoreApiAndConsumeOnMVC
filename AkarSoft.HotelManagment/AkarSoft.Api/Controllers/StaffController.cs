@@ -13,36 +13,48 @@ namespace AkarSoft.Api.Controllers
             _staffService = staffService;
         }
 
-        [HttpGet]
+        [HttpGet] // Tamamlandi
         public async Task<IActionResult> GetAllPersons()
         {
             var result = await _staffService.GetAllPersons();
             return CreateActionResult(result);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetPersonsById(int id)
+        [HttpGet("/active")] // Tamamlandi
+        public async Task<IActionResult> GetAllActivePersons()
         {
-            return Ok("");
+            var result = await _staffService.GetAllPersons();
+            return CreateActionResult(result);
         }
 
-        [HttpPost]
+        [HttpGet("{id}")] // Tamamlandi
+        public async Task<IActionResult> GetPersonsById(int id)
+        {
+            var result = await _staffService.GetPersonsById(id);
+            return CreateActionResult(result);
+        }
+
+        [HttpPost] // Tamamalandi 
         public async Task<IActionResult> CreatePersons(StaffCreateDto Dto)
         {
             var result = await _staffService.CreateNewPerson(Dto);
             return CreateActionResult(result);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePerson(int id)
+
+        [HttpPut("{id}")] //Tamamlandi
+        public async Task<IActionResult> UpdatePerson(StaffUpdateDto dto)
         {
-            return Ok("");
+            var result = await _staffService.UpdatePersonDto(dto);
+            return CreateActionResult(result);
         }
 
-        [HttpDelete("{id}")]
+
+        [HttpDelete("{id}")] // Tamamlandi 
         public async Task<IActionResult> DeletePerson(int id)
         {
-            return Ok("");
+            var result = await _staffService.DeletedPersonSafe(id);
+            return CreateActionResult(result);
         }
     }
 }
